@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default"
+      data-assets-path="static/assets/" data-template="vertical-menu-template">
+
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+
+   <title>Login</title>
+
+   <meta name="description" content=""/>
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"/>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+   <link
+       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+       rel="stylesheet"/>
+
+   <!-- Icons -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="static/assets/vendor/fonts/fontawesome.css"/>
+   <link rel="stylesheet" href="static/assets/vendor/fonts/flag-icons.css"/>
+
+   <!-- Core CSS -->
+   <link rel="stylesheet" href="static/assets/vendor/css/rtl/core.css" class="template-customizer-core-css"/>
+   <link rel="stylesheet" href="static/assets/vendor/css/rtl/theme-default.css"
+         class="template-customizer-theme-css"/>
+   <link rel="stylesheet" href="static/assets/css/demo.css"/>
+
+   <!-- Vendors CSS -->
+<!--   <link rel="stylesheet" href="static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"/>-->
+<!--   <link rel="stylesheet" href="static/assets/vendor/libs/typeahead-js/typeahead.css"/>-->
+<!--   &lt;!&ndash; Vendor &ndash;&gt;-->
+<!--   <link rel="stylesheet" href="static/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css"/>-->
+
+   <!-- Page CSS -->
+   <!-- Page -->
+   <link rel="stylesheet" href="static/assets/vendor/css/pages/page-auth.css"/>
+   <!-- Helpers -->
+<!--   <script src="static/assets/vendor/js/helpers.js"></script>-->
+
+<!--   <script src="static/assets/vendor/js/template-customizer.js"></script>-->
+<!--   <script src="static/assets/js/config.js"></script>-->
+</head>
+
+<body>
+<!-- Content -->
+
+<div class="authentication-wrapper authentication-cover">
+   <div class="authentication-inner row m-0">
+      <!-- /Left Text -->
+      <div class="d-none d-lg-flex col-lg-7 col-xl-8 align-items-center">
+         <div class="flex-row text-center mx-auto">
+            <img src="static/a2.png" alt="Auth Cover Bg color" width="520"
+                 class="img-fluid authentication-cover-img" data-app-light-img="static/a2.png"
+                 data-app-dark-img="static/a2.png"/>
+            <div class="mx-auto">
+               <h3>Несколько кликов, чтобы начать 🚀</h3>
+            </div>
+         </div>
+      </div>
+      <!-- /Left Text -->
+
+      <!-- Register -->
+      <div class="authentication-bg d-flex col-12 col-lg-5 col-xl-4 align-items-center p-4 p-sm-5">
+         <div class="w-px-400 mx-auto">
+            <!-- Logo -->
+            <div class="app-brand mb-4">
+               <a href="/ru/" class="app-brand-link gap-2 mb-2">
+                            <span class="rad0-logo">
+                                <img src="/static/only_logo.png" class="img-fluid" alt="" style="width: 70px;">
+                            </span>
+                  <span class="app-brand-text demo rad0-logo-text menu-text fw-bold ms-3">D-Clinics</span>
+               </a>
+            </div>
+
+            <form id="formAuthentication" class="mb-3" method="POST">
+               <input type="hidden" name="csrfmiddlewaretoken"
+                      value="Yyv4lDsJFtYQOqLnIJMfSe6YWF9xz2miLrrx36AI1hs8tyCBRN0B6YWUtAR2I3py">
+               <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" name="username"
+                         placeholder="Введите имя пользователя" autofocus/>
+               </div>
+               <div class="form-password-toggle mb-3">
+                  <label class="form-label" for="password">Password</label>
+                  <div class="input-group input-group-merge">
+                     <input type="password" id="password" class="form-control" name="password"
+                            placeholder="Введите пароль" aria-describedby="password"/>
+                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                  </div>
+               </div>
+
+
+               <button class="btn btn-primary d-grid w-100">Вход</button>
+            </form>
+
+
+         </div>
+      </div>
+      <!-- /Register -->
+   </div>
+</div>
+
+<!-- / Content -->
+
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<!--<script src="static/assets/vendor/libs/jquery/jquery.js"></script>-->
+<!--<script src="static/assets/vendor/libs/popper/popper.js"></script>-->
+<!--<script src="static/assets/vendor/js/bootstrap.js"></script>-->
+<!--<script src="static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>-->
+<!--<script src="static/assets/vendor/libs/hammer/hammer.js"></script>-->
+<!--<script src="static/assets/vendor/libs/i18n/i18n.js"></script>-->
+<!--<script src="static/assets/vendor/libs/typeahead-js/typeahead.js"></script>-->
+
+<!--<script src="static/assets/vendor/js/menu.js"></script>-->
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+<!--<script src="static/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>-->
+<!--<script src="static/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>-->
+<!--<script src="static/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>-->
+
+
+<!-- Page JS -->
+</body>
+
+</html>
